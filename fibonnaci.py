@@ -20,4 +20,4 @@ def some_function(an_argument):
     return something
 
 if __name__ == "__main__":
-    # Do stuff here
+    # def some_function()
