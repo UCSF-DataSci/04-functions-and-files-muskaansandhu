@@ -31,10 +31,9 @@ def fibonacci_sequence(limit):
 parser = argparse.ArgumentParser()
 parser.add_argument("limit", type=int, help="Upper limit for Fibonacci sequence") #defining limit 
 parser.add_argument("filename", type=str, help="Output file name") #defining output file name 
-
+args = parser.parse_args()  
 
 if __name__ == "__main__":
-    args = parser.parse_args()  
     result = fibonacci_sequence(args.limit)  
     try:
         with open(args.filename, 'w') as file:  
